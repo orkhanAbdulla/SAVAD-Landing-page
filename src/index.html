@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="/public/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="sticky top-0 w-full  backdrop-blur-lg z-10">
+        <div class="container mx-auto py-5 flex justify-between items-center">
+          <div class="flex items-center gap-3">
+            <img
+              src="/public/assets/icons/Savad_logo.svg"
+              width="32px"
+              height="31px"
+              alt="Savad_logo"
+            />
+            <h1 class="text-2xl font-TTHovesBold text-[#060606]">savad</h1>
+          </div>
+          <a
+            class="py-3 px-10 bg-primary-900 rounded-[10px] text-lg text-white font-TTHovesBold"
+            href="#"
+          >
+            Yüklə
+          </a>
+        </div>
+      </header>
+      
+
+    <main>
+      <section class="container mx-auto">
+        <div class="flex justify-center items-center">
+          <div
+            class="flex flex-col justify-center items-center gap-8 max-w-[524px]"
+          >
+            <div
+              class="flex flex-col justify-center items-center gap-3 self-stretch"
+            >
+              <h1
+                style="color: #0d0d0d"
+                class="text-[32px] font-TTHovesBold leading-[44px]"
+              >
+                Öyrənməyə Hazırsınız?
+              </h1>
+              <p style="color: #292929" class="text-xl text-center">
+                Uğurlu gələcəyinizə ilk addımı atmaq üçün gözləməyin.
+                Tətbiqimizi yükləyin və tədris dünyasına qoşulun!
+              </p>
+            </div>
+            <div class="flex items-center gap-[16px]">
+              <!-- App Store Button -->
+              <a
+                href="#"
+                class="flex items-center justify-center w-[180px] sm:w-[190px] py-[14px] px-[12px] rounded-2xl bg-primary-400"
+              >
+                <img
+                  src="/public/assets/icons/apple.svg"
+                  alt="apple"
+                  class="w-6 h-6"
+                />
+                <div class="flex flex-col items-start ml-3">
+                  <span
+                    class="text-primary-900 text-[10px] leading-[14px] tracking-[1.5px] uppercase font-PoppionsMedium"
+                  >
+                    Download on the
+                  </span>
+                  <span class="text-primary-900 text-sm font-PoppionsSemiBold">
+                    App Store
+                  </span>
+                </div>
+              </a>
+
+              <!-- Google Play Button -->
+              <a
+                href="#"
+                class="flex items-center justify-start w-[180px] sm:w-[190px] py-[14px] px-[12px] rounded-2xl bg-primary-400"
+              >
+                <img
+                  src="/public/assets/icons/android.svg"
+                  alt="apple"
+                  class="w-6 h-6"
+                />
+                <div class="flex flex-col items-start ml-3">
+                  <span
+                    class="text-primary-900 text-[10px] leading-[14px] tracking-[1.5px] uppercase font-PoppionsMedium"
+                  >
+                    Get it on
+                  </span>
+                  <span class="text-primary-900 text-sm font-PoppionsSemiBold">
+                    Google Play
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container mx-auto my-20">
+        <div class="flex justify-center items-center">
+          <div
+            class="flex justify-center items-center gap-8 relative min-w-[1000px]"
+          >
+            <!-- 1. Resim -->
+            <img
+              src="/public/assets/images/app.png"
+              alt="appscreen"
+              class="relative left-[125px] z-[-1]"
+            />
+            <!-- 2. Resim -->
+            <img src="/public/assets/images/app2.png" alt="appscreen2" />
+            <!-- 3. Resim -->
+            <img
+              src="/public/assets/images/app3.png"
+              alt="appscreen3"
+              class="relative right-[155px] z-[-1]"
+            />
+            <div class="absolute lg:left-[-40px] top-[-40px]">
+              <img
+                src="/public/assets/icons/arrow1.svg"
+                class="transform translate-x-40 translate-y-[-20px]"
+                alt="arrow"
+              />
+              <p
+                style="background-color: #e6e7ec"
+                class="py-4 px-5 rounded-lg text-base font-TTHovesMedium"
+              >
+                İstədiyin vaxt, istədiyin yerdə
+              </p>
+            </div>
+            <div class="absolute left-[-40px] bottom-0">
+              <p
+                style="background-color: #e6e7ec"
+                class="py-4 px-5 rounded-lg text-base font-TTHovesMedium"
+                class="absolute"
+              >
+                Sürətli, əlçatan, peşəkar
+              </p>
+              <img
+                src="/public/assets/icons/arrow2.svg"
+                class="transform translate-x-28 translate-y-[0px]"
+                alt="arrow"
+              />
+            </div>
+            <div class="absolute right-8 top-44">
+              <p
+                style="background-color: #e6e7ec"
+                class="py-4 px-5 rounded-lg text-base font-TTHovesMedium"
+                class="absolute"
+              >
+                Öyrənməyin asan yolu
+              </p>
+              <img
+                src="/public/assets/icons/arrow3.svg"
+                class="translate-y-5"
+                alt="arrow"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container mx-auto my-10 px-4">
+        <div class="flex flex-col items-center gap-6">
+          <!-- Başlık -->
+          <h1
+            class="text-[#0D0D0D] text-2xl md:text-3xl font-TTHovesBold leading-tight"
+          >
+            Niyə biz?
+          </h1>
+          <!-- Kartlar -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-11 w-full"
+          >
+            <!-- 1. Kart -->
+            <div
+              style="background-color: #fff"
+              class="flex flex-col justify-center items-center gap-8 p-6 rounded-lg"
+            >
+              <div class="flex flex-col justify-center items-center gap-2">
+                <h1
+                  class="text-primary-900 text-center text-4xl md:text-5xl font-TTHovesBold"
+                >
+                  200+
+                </h1>
+                <p
+                  class="text-[#151515] text-center uppercase font-TTHovesBold text-lg md:text-xl leading-7 tracking-wide"
+                >
+                  tələbə
+                </p>
+              </div>
+              <span
+                class="h-px w-full max-w-sm bg-[rgba(63,80,187,0.3)]"
+              ></span>
+              <p class="text-lg font-TTHovesMedium text-center max-w-xs">
+                Bizim kurslarımızla biliklərini artıran minlərlə tələbə arasında
+                sən də yerini al!
+              </p>
+            </div>
+            <!-- 2. Kart -->
+            <div
+              style="background-color: #fff"
+              class="flex flex-col justify-center items-center gap-8 p-6 rounded-lg"
+            >
+              <div class="flex flex-col justify-center items-center gap-2">
+                <h1
+                  class="text-primary-900 text-center text-4xl md:text-5xl font-TTHovesBold"
+                >
+                  300+
+                </h1>
+                <p
+                  class="text-[#151515] text-center uppercase font-TTHovesBold text-lg md:text-xl leading-7 tracking-wide"
+                >
+                  müəllım
+                </p>
+              </div>
+              <span
+                class="h-px w-full max-w-sm bg-[rgba(63,80,187,0.3)]"
+              ></span>
+              <p class="text-lg font-TTHovesMedium text-center max-w-xs">
+                Öz sahəsində ekspert olan müəllimlərdən öyrənmək fürsətini
+                qaçırma.
+              </p>
+            </div>
+            <!-- 3. Kart -->
+            <div
+              style="background-color: #fff"
+              class="flex flex-col justify-center items-center gap-8 p-6 rounded-lg"
+            >
+              <div class="flex flex-col justify-center items-center gap-2">
+                <h1
+                  class="text-primary-900 text-center text-4xl md:text-5xl font-TTHovesBold"
+                >
+                  50+
+                </h1>
+                <p
+                  class="text-[#151515] text-center uppercase font-TTHovesBold text-lg md:text-xl leading-7 tracking-wide"
+                >
+                  aktıv kurs
+                </p>
+              </div>
+              <span
+                class="h-px w-full max-w-sm bg-[rgba(63,80,187,0.3)]"
+              ></span>
+              <p class="text-lg font-TTHovesMedium text-center max-w-xs">
+                Texnologiyadan incəsənətə, biznesdən sağlamlığa – sənə uyğun
+                olan kursu tap!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container mx-auto my-20 px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-center items-center">
+          <div
+            class="flex flex-col justify-center items-center gap-9 max-w-4xl w-full"
+          >
+            <!-- Başlık ve Açıklama -->
+            <div
+              class="flex flex-col justify-center items-center gap-3 text-center max-w-[592px]"
+            >
+              <h1
+                class="text-2xl sm:text-3xl lg:text-3xl font-TTHovesBold leading-snug"
+              >
+                Sualınız var?
+              </h1>
+              <p class="text-gray-700 text-base sm:text-lg">
+                Lorem ipsum dolor sit amet consectetur. Erat mattis condimentum
+                volutpat erat magna. Egestas eget felis sollicitudin faucibus ut
+                lacus.
+              </p>
+            </div>
+
+            <!-- Accordion -->
+            <div class="flex flex-col items-stretch gap-6 w-full">
+              <!-- Accordion Item 1 -->
+              <div class="w-full">
+                <button
+                  style="background-color: #fff"
+                  onclick="toggleAccordion(1)"
+                  class="flex justify-between items-center py-5 px-6 w-full rounded-lg"
+                >
+                  <span
+                    class="text-gray-900 text-lg sm:text-xl font-TTHovesBold"
+                  >
+                    What is Material Tailwind?
+                  </span>
+                  <span
+                    id="icon-1"
+                    class="text-gray-700 transition-transform duration-300"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-6 h-6 sm:w-8 sm:h-8"
+                      viewBox="0 0 52 52"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M5.95874 26C5.95874 37.0673 14.9309 46.0417 26.0004 46.0417C37.0677 46.0417 46.0421 37.0673 46.0421 26C46.0421 14.9327 37.0677 5.95834 26.0004 5.95834C14.9309 5.95834 5.95874 14.9327 5.95874 26Z"
+                        fill="#EDEFFB"
+                      />
+                      <path
+                        d="M18.4795 22.875L26 30.428L33.5205 22.875"
+                        stroke="#3F50BB"
+                        stroke-width="3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </button>
+                <div
+                  style="background-color: #fff"
+                  id="content-1"
+                  class="overflow-hidden max-h-0 rounded-lg transition-all duration-300"
+                >
+                  <div class="px-6 py-4 text-gray-800 text-base sm:text-lg">
+                    NeoWave works with FDIC-insured banks, including Blue Ridge
+                    Bank & Trust, Member FDIC, to store your deposits.
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion Item 2 -->
+              <div class="w-full">
+                <button
+                  style="background-color: #fff"
+                  onclick="toggleAccordion(2)"
+                  class="flex justify-between items-center py-5 px-6 w-full rounded-lg"
+                >
+                  <span
+                    class="text-gray-900 text-lg sm:text-xl font-TTHovesBold"
+                  >
+                    What is Material Tailwind?
+                  </span>
+                  <span
+                    id="icon-2"
+                    class="text-gray-700 transition-transform duration-300"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-6 h-6 sm:w-8 sm:h-8"
+                      viewBox="0 0 52 52"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M5.95874 26C5.95874 37.0673 14.9309 46.0417 26.0004 46.0417C37.0677 46.0417 46.0421 37.0673 46.0421 26C46.0421 14.9327 37.0677 5.95834 26.0004 5.95834C14.9309 5.95834 5.95874 14.9327 5.95874 26Z"
+                        fill="#EDEFFB"
+                      />
+                      <path
+                        d="M18.4795 22.875L26 30.428L33.5205 22.875"
+                        stroke="#3F50BB"
+                        stroke-width="3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </button>
+                <div
+                  style="background-color: #fff"
+                  id="content-2"
+                  class="overflow-hidden max-h-0 rounded-lg transition-all duration-300"
+                >
+                  <div class="px-6 py-4 text-gray-800 text-base sm:text-lg">
+                    NeoWave works with FDIC-insured banks, including Blue Ridge
+                    Bank & Trust, Member FDIC, to store your deposits.
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion Item 3 -->
+              <div class="w-full">
+                <button
+                  style="background-color: #fff"
+                  onclick="toggleAccordion(3)"
+                  class="flex justify-between items-center py-5 px-6 w-full rounded-lg"
+                >
+                  <span
+                    class="text-gray-900 text-lg sm:text-xl font-TTHovesBold"
+                  >
+                    What is Material Tailwind?
+                  </span>
+                  <span
+                    id="icon-3"
+                    class="text-gray-700 transition-transform duration-300"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-6 h-6 sm:w-8 sm:h-8"
+                      viewBox="0 0 52 52"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M5.95874 26C5.95874 37.0673 14.9309 46.0417 26.0004 46.0417C37.0677 46.0417 46.0421 37.0673 46.0421 26C46.0421 14.9327 37.0677 5.95834 26.0004 5.95834C14.9309 5.95834 5.95874 14.9327 5.95874 26Z"
+                        fill="#EDEFFB"
+                      />
+                      <path
+                        d="M18.4795 22.875L26 30.428L33.5205 22.875"
+                        stroke="#3F50BB"
+                        stroke-width="3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </button>
+                <div
+                  style="background-color: #fff"
+                  id="content-3"
+                  class="overflow-hidden max-h-0 rounded-lg transition-all duration-300"
+                >
+                  <div class="px-6 py-4 text-gray-800 text-base sm:text-lg">
+                    NeoWave works with FDIC-insured banks, including Blue Ridge
+                    Bank & Trust, Member FDIC, to store your deposits.
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion Item 4 -->
+              <div class="w-full">
+                <button
+                  style="background-color: #fff"
+                  onclick="toggleAccordion(4)"
+                  class="flex justify-between items-center py-5 px-6 w-full rounded-lg"
+                >
+                  <span
+                    class="text-gray-900 text-lg sm:text-xl font-TTHovesBold"
+                  >
+                    What is Material Tailwind?
+                  </span>
+                  <span
+                    id="icon-4"
+                    class="text-gray-700 transition-transform duration-300"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-6 h-6 sm:w-8 sm:h-8"
+                      viewBox="0 0 52 52"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M5.95874 26C5.95874 37.0673 14.9309 46.0417 26.0004 46.0417C37.0677 46.0417 46.0421 37.0673 46.0421 26C46.0421 14.9327 37.0677 5.95834 26.0004 5.95834C14.9309 5.95834 5.95874 14.9327 5.95874 26Z"
+                        fill="#EDEFFB"
+                      />
+                      <path
+                        d="M18.4795 22.875L26 30.428L33.5205 22.875"
+                        stroke="#3F50BB"
+                        stroke-width="3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </button>
+                <div
+                  style="background-color: #fff"
+                  id="content-4"
+                  class="overflow-hidden max-h-0 rounded-lg transition-all duration-300"
+                >
+                  <div class="px-6 py-4 text-gray-800 text-base sm:text-lg">
+                    NeoWave works with FDIC-insured banks, including Blue Ridge
+                    Bank & Trust, Member FDIC, to store your deposits.
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion Item 5 -->
+              <div class="w-full">
+                <button
+                  style="background-color: #fff"
+                  onclick="toggleAccordion(5)"
+                  class="flex justify-between items-center py-5 px-6 w-full rounded-lg"
+                >
+                  <span
+                    class="text-gray-900 text-lg sm:text-xl font-TTHovesBold"
+                  >
+                    What is Material Tailwind?
+                  </span>
+                  <span
+                    id="icon-5"
+                    class="text-gray-700 transition-transform duration-300"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-6 h-6 sm:w-8 sm:h-8"
+                      viewBox="0 0 52 52"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M5.95874 26C5.95874 37.0673 14.9309 46.0417 26.0004 46.0417C37.0677 46.0417 46.0421 37.0673 46.0421 26C46.0421 14.9327 37.0677 5.95834 26.0004 5.95834C14.9309 5.95834 5.95874 14.9327 5.95874 26Z"
+                        fill="#EDEFFB"
+                      />
+                      <path
+                        d="M18.4795 22.875L26 30.428L33.5205 22.875"
+                        stroke="#3F50BB"
+                        stroke-width="3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </button>
+                <div
+                  style="background-color: #fff"
+                  id="content-5"
+                  class="overflow-hidden max-h-0 rounded-lg transition-all duration-300"
+                >
+                  <div class="px-6 py-4 text-gray-800 text-base sm:text-lg">
+                    NeoWave works with FDIC-insured banks, including Blue Ridge
+                    Bank & Trust, Member FDIC, to store your deposits.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container mx-auto my-10 px-4">
+        <div class="flex flex-col items-start gap-5">
+          <h1
+            class="text-2xl sm:text-3xl lg:text-3xl font-TTHovesBold leading-snug"
+          >
+            İstifadəçilərimiz Nə Deyir?
+          </h1>
+          <div
+            class="grid gap-6 w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+          >
+            <!-- Card Item 1 -->
+            <div
+              class="bg-[#fff] flex flex-col items-start py-6 px-8 gap-6 rounded-[16px] border border-[#F5F5F5]"
+            >
+              <div class="flex justify-between items-center w-full gap-6">
+                <div class="flex flex-col items-start gap-1">
+                  <h3 class="font-TTHovesBold text-xl">Name surname</h3>
+                  <div class="flex items-center gap-2">
+                    <span class="text-base">4.5</span>
+                    <img src="/public/assets/icons/star.svg" alt="star" />
+                  </div>
+                </div>
+                <span
+                  class="py-1.5 px-3 rounded-[6px] bg-primary-400 font-TTHovesBold text-lg text-primary-900"
+                >
+                  müəllim
+                </span>
+              </div>
+              <span class="h-px w-full bg-[#E7E7E7]"></span>
+              <p class="text-base font-TTHovesMedium">
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                vel auctor ligula, nec sodales lectus. Pellentesque congue risus
+                sit amet mollis scelerisque.”
+              </p>
+            </div>
+
+            <!-- Card Item 2 -->
+            <div
+              class="bg-[#fff] flex flex-col items-start py-6 px-8 gap-6 rounded-[16px] border border-[#F5F5F5]"
+            >
+              <div class="flex justify-between items-center w-full gap-6">
+                <div class="flex flex-col items-start gap-1">
+                  <h3 class="font-TTHovesBold text-xl">Name surname</h3>
+                  <div class="flex items-center gap-2">
+                    <span class="text-base">4.5</span>
+                    <img src="/public/assets/icons/star.svg" alt="star" />
+                  </div>
+                </div>
+                <span
+                  class="py-1.5 px-3 rounded-[6px] bg-primary-400 font-TTHovesBold text-lg text-primary-900"
+                >
+                  tələbə
+                </span>
+              </div>
+              <span class="h-px w-full bg-[#E7E7E7]"></span>
+              <p class="text-base font-TTHovesMedium">
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                vel auctor ligula, nec sodales lectus. Pellentesque congue risus
+                sit amet mollis scelerisque.”
+              </p>
+            </div>
+
+            <!-- Card Item 3 -->
+            <div
+              class="bg-[#fff] flex flex-col items-start py-6 px-8 gap-6 rounded-[16px] border border-[#F5F5F5]"
+            >
+              <div class="flex justify-between items-center w-full gap-6">
+                <div class="flex flex-col items-start gap-1">
+                  <h3 class="font-TTHovesBold text-xl">Name surname</h3>
+                  <div class="flex items-center gap-2">
+                    <span class="text-base">4.5</span>
+                    <img src="/public/assets/icons/star.svg" alt="star" />
+                  </div>
+                </div>
+                <span
+                  class="py-1.5 px-3 rounded-[6px] bg-primary-400 font-TTHovesBold text-lg text-primary-900"
+                >
+                  tələbə
+                </span>
+              </div>
+              <span class="h-px w-full bg-[#E7E7E7]"></span>
+              <p class="text-base font-TTHovesMedium">
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                vel auctor ligula, nec sodales lectus. Pellentesque congue risus
+                sit amet mollis scelerisque.”
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container mx-auto my-28 px-4">
+        <div
+          class="flex flex-col lg:flex-row justify-between items-center gap-10 px-6 lg:px-[100px] rounded-[28px] bg-primary-900 overflow-hidden"
+        >
+          <!-- Text Section -->
+          <div
+            class="flex flex-col items-center lg:items-start justify-around text-center lg:text-left"
+          >
+            <div
+              class="flex flex-col items-center lg:items-start gap-3 max-w-[391px]"
+            >
+              <h1 class="text-[#FFF] font-TTHovesBold text-2xl sm:text-3xl">
+                İstədiyiniz Zaman, İstədiyiniz Yerdə Öyrənin!
+              </h1>
+              <span class="text-base sm:text-lg text-[#F2F2F2]">
+                Lorem ipsum dolor sit amet consectetur. Sed ut aliquet sed
+                habitant velit. Nibh egestas in posuere sagittis nulla et massa.
+                Nunc aliquet
+              </span>
+            </div>
+            <div class="flex items-center gap-4 mt-6">
+              <!-- App Store Button -->
+              <a
+                href="#"
+                class="flex items-center justify-center w-[180px] sm:w-[190px] py-[14px] px-[12px] rounded-2xl bg-[rgba(255,255,255,0.14)]"
+              >
+                <img
+                  src="/public/assets/icons/apple-white.svg"
+                  alt="apple"
+                  class="w-6 h-6"
+                />
+                <div class="flex flex-col items-start ml-3">
+                  <span
+                    class="text-[#FFF] text-[10px] leading-[14px] tracking-[1.5px] uppercase font-PoppionsMedium"
+                  >
+                    Download on the
+                  </span>
+                  <span class="text-[#FFF] text-sm font-PoppionsSemiBold">
+                    App Store
+                  </span>
+                </div>
+              </a>
+
+              <!-- Google Play Button -->
+              <a
+                href="#"
+                class="flex items-center justify-start w-[180px] sm:w-[190px] py-[14px] px-[12px] rounded-2xl bg-[rgba(255,255,255,0.14)]"
+              >
+                <img
+                  src="/public/assets/icons/android-white.svg"
+                  alt="apple"
+                  class="w-6 h-6"
+                />
+                <div class="flex flex-col items-start ml-3">
+                  <span
+                    class="text-[#FFF] text-[10px] leading-[14px] tracking-[1.5px] uppercase font-PoppionsMedium"
+                  >
+                    Get it on
+                  </span>
+                  <span class="text-[#FFF] text-sm font-PoppionsSemiBold">
+                    Google Play
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- Image Section -->
+          <div class="flex justify-center items-center relative">
+            <img
+              src="/public/assets/images/app2.png"
+              alt="appscreen2"
+              class="relative z-[1] transform translate-y-10 lg:translate-y-32 -rotate-12 max-w-[200px] sm:max-w-[300px] lg:max-w-none"
+            />
+            <img
+              src="/public/assets/images/app3.png"
+              alt="appscreen3"
+              class="relative transform -translate-x-5 sm:-translate-x-10 lg:-translate-x-20 translate-y-10 lg:translate-y-32 rotate-12 max-w-[200px] sm:max-w-[300px] lg:max-w-none"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container mx-auto my-6 px-4">
+        <div class="flex flex-col items-start gap-7">
+          <!-- Logo and Social Icons -->
+          <div class="flex flex-wrap justify-between items-center w-full gap-4">
+            <!-- Logo Section -->
+            <div class="flex items-center gap-3">
+              <img
+                src="/public/assets/icons/Savad_logo.svg"
+                width="32"
+                height="31"
+                alt="Savad_logo"
+              />
+              <h1 class="text-2xl font-TTHovesBold text-[#060606]">savad</h1>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="flex items-center gap-4">
+              <a href="#" class="w-6 h-6">
+                <img src="/public/assets/icons/insta.svg" alt="Instagram" />
+              </a>
+              <a href="#" class="w-6 h-6">
+                <img src="/public/assets/icons/tw.svg" alt="Twitter" />
+              </a>
+              <a href="#" class="w-6 h-6">
+                <img src="/public/assets/icons/fb.svg" alt="Facebook" />
+              </a>
+            </div>
+          </div>
+          <!-- Horizontal Divider -->
+          <span class="h-px w-full bg-[#E7E7E7]"></span>
+          <!-- Footer Links and Details -->
+          <div class="flex flex-wrap justify-between items-center w-full gap-4">
+            <span class="text-sm text-[#060606]"
+              >All rights reserved © 2024</span
+            >
+            <span class="text-sm text-[#060606]">info@sikayet.az</span>
+            <p
+              class="text-sm flex flex-wrap justify-end items-center gap-2 text-[#060606]"
+            >
+              <a href="#" class="hover:underline">Terms of Service</a>
+              <span>.</span>
+              <a href="#" class="hover:underline">Privacy & Policy</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function toggleAccordion(index) {
+        const contents = document.querySelectorAll("[id^='content-']");
+        const icons = document.querySelectorAll("[id^='icon-']");
+
+        // SVG for Down icon
+        const downSVG = `
+<svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.95874 26C5.95874 37.0673 14.9309 46.0417 26.0004 46.0417C37.0677 46.0417 46.0421 37.0673 46.0421 26C46.0421 14.9327 37.0677 5.95834 26.0004 5.95834C14.9309 5.95834 5.95874 14.9327 5.95874 26Z" fill="#3F50BB"/>
+<path d="M18.4795 29.125L26 21.572L33.5205 29.125" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+  `;
+
+        // SVG for Up icon
+        const upSVG = `
+<svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.95874 26C5.95874 37.0673 14.9309 46.0417 26.0004 46.0417C37.0677 46.0417 46.0421 37.0673 46.0421 26C46.0421 14.9327 37.0677 5.95834 26.0004 5.95834C14.9309 5.95834 5.95874 14.9327 5.95874 26Z" fill="#EDEFFB"/>
+<path d="M18.4795 22.875L26 30.428L33.5205 22.875" stroke="#3F50BB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+  `;
+
+        // Kapalı duruma sıfırla
+        contents.forEach((content, idx) => {
+          const icon = icons[idx];
+          content.style.maxHeight = "0";
+          icon.innerHTML = upSVG;
+        });
+
+        // Tıklanan öğeyi aç/kapat
+        const content = document.getElementById(`content-${index}`);
+        const icon = document.getElementById(`icon-${index}`);
+        if (content.style.maxHeight && content.style.maxHeight !== "0px") {
+          content.style.maxHeight = "0";
+          icon.innerHTML = upSVG;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+          icon.innerHTML = downSVG;
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+    font-family: "TTHoves", sans-serif;
+    background-color: theme("colors.white");
+}
+@font-face {
+    font-family: "RFDewiExpanded-Bold";
+    src: url(assets/fonts/RFDewiExpanded/RFDewiExpanded-Bold.ttf) format("woff");
+    font-style: normal;
+    font-weight: 800;
+  }
+  @font-face {
+    font-family: "TTHoves-Light";
+    src: url(assets/fonts/TTHoves/TTHoves-Light.ttf) format("woff");
+  }
+  @font-face {
+    font-family: "TTHoves-Meduim";
+    src: url(assets/fonts/TTHoves/TTHoves-Medium.ttf) format("woff");
+  }
+  @font-face {
+    font-family: "TTHoves-Bold";
+    src: url(assets/fonts/TTHoves/TTHoves-Bold.ttf) format("woff");
+  }
+  @font-face {
+    font-family: "TTHoves-DemiBold";
+    src: url(assets/fonts/TTHoves/TTHoves-DemiBold.tff) format("woff");
+  }
+  @font-face {
+    font-family: "Poppions-Bold";
+    src: url(assets/fonts/Poppions/Poppins-Bold.ttf) format("woff");
+  }
+  @font-face {
+      font-family: "Poppions-SemiBold";
+      src: url(assets/fonts/Poppions/Poppins-SemiBold.ttf) format("woff");
+    }
+    @font-face {
+      font-family: "Poppions-Medium";
+      src: url(assets/fonts/Poppions/Poppins-Medium.ttf) format("woff");
+    }
+    
