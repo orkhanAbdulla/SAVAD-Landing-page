@@ -4,55 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link href="/public/output.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="sticky top-0 w-full  backdrop-blur-lg z-10">
-        <div class="container mx-auto py-5 flex justify-between items-center">
-          <div class="flex items-center gap-3">
-            <img
-              src="/public/assets/icons/Savad_logo.svg"
-              width="32px"
-              height="31px"
-              alt="Savad_logo"
-            />
-            <h1 class="text-2xl font-TTHovesBold text-[#060606]">savad</h1>
-          </div>
-          <a
-            class="py-3 px-10 bg-primary-900 rounded-[10px] text-lg text-white font-TTHovesBold"
-            href="#"
-          >
-            Yüklə
-          </a>
+    <header class="sticky top-0 w-full backdrop-blur-lg z-10">
+      <div class="container mx-auto py-5 flex justify-between items-center">
+        <div class="flex items-center gap-3">
+          <img
+            src="/public/assets/icons/Savad_logo.svg"
+            width="32px"
+            height="31px"
+            alt="Savad_logo"
+          />
+          <h1 class="text-2xl font-TTHovesBold text-[#060606]">savad</h1>
         </div>
-      </header>
-      
-
+        <a
+          class="py-3 px-10 bg-primary-900 rounded-[10px] text-lg text-white font-TTHovesBold"
+          href="#"
+        >
+          Yüklə
+        </a>
+      </div>
+    </header>
     <main>
-      <section class="container mx-auto">
+      <section class="container mx-auto px-4">
         <div class="flex justify-center items-center">
           <div
             class="flex flex-col justify-center items-center gap-8 max-w-[524px]"
           >
+            <!-- Başlık ve Açıklama -->
             <div
-              class="flex flex-col justify-center items-center gap-3 self-stretch"
+              class="flex flex-col justify-center items-center gap-3 text-center"
             >
               <h1
-                style="color: #0d0d0d"
-                class="text-[32px] font-TTHovesBold leading-[44px]"
+                class="text-[#0d0d0d] text-[28px] sm:text-[32px] font-TTHovesBold leading-[1.4]"
               >
                 Öyrənməyə Hazırsınız?
               </h1>
-              <p style="color: #292929" class="text-xl text-center">
+              <p class="text-[#292929] text-base sm:text-xl">
                 Uğurlu gələcəyinizə ilk addımı atmaq üçün gözləməyin.
                 Tətbiqimizi yükləyin və tədris dünyasına qoşulun!
               </p>
             </div>
-            <div class="flex items-center gap-[16px]">
-              <!-- App Store Button -->
+
+            <!-- Butonlar -->
+            <div class="flex flex-col sm:flex-row items-center gap-4">
+              <!-- App Store Butonu -->
               <a
                 href="#"
-                class="flex items-center justify-center w-[180px] sm:w-[190px] py-[14px] px-[12px] rounded-2xl bg-primary-400"
+                class="flex items-center justify-center w-full sm:w-auto sm:min-w-[180px] py-3 px-4 rounded-2xl bg-primary-400"
               >
                 <img
                   src="/public/assets/icons/apple.svg"
@@ -71,14 +75,14 @@
                 </div>
               </a>
 
-              <!-- Google Play Button -->
+              <!-- Google Play Butonu -->
               <a
                 href="#"
-                class="flex items-center justify-start w-[180px] sm:w-[190px] py-[14px] px-[12px] rounded-2xl bg-primary-400"
+                class="flex items-center justify-center w-full sm:w-auto sm:min-w-[180px] py-3 px-4 rounded-2xl bg-primary-400"
               >
                 <img
                   src="/public/assets/icons/android.svg"
-                  alt="apple"
+                  alt="android"
                   class="w-6 h-6"
                 />
                 <div class="flex flex-col items-start ml-3">
@@ -96,26 +100,29 @@
           </div>
         </div>
       </section>
-      <section class="container mx-auto my-20">
+      <section class="container mx-auto my-20 px-4 relative">
         <div class="flex justify-center items-center">
-          <div
-            class="flex justify-center items-center gap-8 relative min-w-[1000px]"
-          >
+          <div class="flex justify-center items-center gap-8 relative lg:flex">
             <!-- 1. Resim -->
             <img
               src="/public/assets/images/app.png"
               alt="appscreen"
-              class="relative left-[125px] z-[-1]"
+              class="relative left-[125px] z-[-1] w-[150px] sm:w-[200px] lg:w-auto"
             />
             <!-- 2. Resim -->
-            <img src="/public/assets/images/app2.png" alt="appscreen2" />
+            <img
+              src="/public/assets/images/app2.png"
+              alt="appscreen2"
+              class="w-[150px] sm:w-[200px] lg:w-auto"
+            />
             <!-- 3. Resim -->
             <img
               src="/public/assets/images/app3.png"
               alt="appscreen3"
-              class="relative right-[155px] z-[-1]"
+              class="relative right-[155px] z-[-1] w-[150px] sm:w-[200px] lg:w-auto"
             />
-            <div class="absolute lg:left-[-40px] top-[-40px]">
+            <!-- Soldaki Metin -->
+            <div class="absolute hidden lg:block lg:left-[-140px] top-[-40px]">
               <img
                 src="/public/assets/icons/arrow1.svg"
                 class="transform translate-x-40 translate-y-[-20px]"
@@ -128,11 +135,11 @@
                 İstədiyin vaxt, istədiyin yerdə
               </p>
             </div>
-            <div class="absolute left-[-40px] bottom-0">
+            <!-- Alttaki Metin -->
+            <div class="absolute hidden lg:block left-[-150px] bottom-0">
               <p
                 style="background-color: #e6e7ec"
                 class="py-4 px-5 rounded-lg text-base font-TTHovesMedium"
-                class="absolute"
               >
                 Sürətli, əlçatan, peşəkar
               </p>
@@ -142,11 +149,11 @@
                 alt="arrow"
               />
             </div>
-            <div class="absolute right-8 top-44">
+            <!-- Sağdaki Metin -->
+            <div class="absolute hidden lg:block right-[-70PX] top-44">
               <p
                 style="background-color: #e6e7ec"
                 class="py-4 px-5 rounded-lg text-base font-TTHovesMedium"
-                class="absolute"
               >
                 Öyrənməyin asan yolu
               </p>
@@ -163,13 +170,13 @@
         <div class="flex flex-col items-center gap-6">
           <!-- Başlık -->
           <h1
-            class="text-[#0D0D0D] text-2xl md:text-3xl font-TTHovesBold leading-tight"
+            class="text-[#0D0D0D] text-2xl sm:text-3xl md:text-4xl font-TTHovesBold leading-tight"
           >
             Niyə biz?
           </h1>
           <!-- Kartlar -->
           <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-11 w-full"
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-11 w-full"
           >
             <!-- 1. Kart -->
             <div
@@ -178,12 +185,13 @@
             >
               <div class="flex flex-col justify-center items-center gap-2">
                 <h1
-                  class="text-primary-900 text-center text-4xl md:text-5xl font-TTHovesBold"
+                  id="count-1"
+                  class="text-primary-900 text-center text-4xl sm:text-5xl font-TTHovesBold"
                 >
-                  200+
+                  0+
                 </h1>
                 <p
-                  class="text-[#151515] text-center uppercase font-TTHovesBold text-lg md:text-xl leading-7 tracking-wide"
+                  class="text-[#151515] text-center uppercase font-TTHovesBold text-lg sm:text-xl leading-7 tracking-wide"
                 >
                   tələbə
                 </p>
@@ -203,12 +211,13 @@
             >
               <div class="flex flex-col justify-center items-center gap-2">
                 <h1
-                  class="text-primary-900 text-center text-4xl md:text-5xl font-TTHovesBold"
+                  id="count-2"
+                  class="text-primary-900 text-center text-4xl sm:text-5xl font-TTHovesBold"
                 >
-                  300+
+                  0+
                 </h1>
                 <p
-                  class="text-[#151515] text-center uppercase font-TTHovesBold text-lg md:text-xl leading-7 tracking-wide"
+                  class="text-[#151515] text-center uppercase font-TTHovesBold text-lg sm:text-xl leading-7 tracking-wide"
                 >
                   müəllım
                 </p>
@@ -228,12 +237,13 @@
             >
               <div class="flex flex-col justify-center items-center gap-2">
                 <h1
-                  class="text-primary-900 text-center text-4xl md:text-5xl font-TTHovesBold"
+                  id="count-3"
+                  class="text-primary-900 text-center text-4xl sm:text-5xl font-TTHovesBold"
                 >
-                  50+
+                  0+
                 </h1>
                 <p
-                  class="text-[#151515] text-center uppercase font-TTHovesBold text-lg md:text-xl leading-7 tracking-wide"
+                  class="text-[#151515] text-center uppercase font-TTHovesBold text-lg sm:text-xl leading-7 tracking-wide"
                 >
                   aktıv kurs
                 </p>
@@ -521,92 +531,93 @@
           </div>
         </div>
       </section>
-      <section class="container mx-auto my-10 px-4">
-        <div class="flex flex-col items-start gap-5">
+      <section class="overflow-hidden my-10 px-4">
+        <div class="container mx-auto">
           <h1
-            class="text-2xl sm:text-3xl lg:text-3xl font-TTHovesBold leading-snug"
+            class="text-2xl pb-5  sm:text-3xl lg:text-3xl font-TTHovesBold leading-snug"
           >
             İstifadəçilərimiz Nə Deyir?
           </h1>
-          <div
-            class="grid gap-6 w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
-          >
-            <!-- Card Item 1 -->
-            <div
-              class="bg-[#fff] flex flex-col items-start py-6 px-8 gap-6 rounded-[16px] border border-[#F5F5F5]"
-            >
-              <div class="flex justify-between items-center w-full gap-6">
-                <div class="flex flex-col items-start gap-1">
-                  <h3 class="font-TTHovesBold text-xl">Name surname</h3>
-                  <div class="flex items-center gap-2">
-                    <span class="text-base">4.5</span>
-                    <img src="/public/assets/icons/star.svg" alt="star" />
-                  </div>
-                </div>
-                <span
-                  class="py-1.5 px-3 rounded-[6px] bg-primary-400 font-TTHovesBold text-lg text-primary-900"
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <!-- Card Item 1 -->
+              <div class="swiper-slide">
+                <div
+                  class="bg-[#fff] flex flex-col items-start py-6 px-8 gap-6 rounded-[16px] border border-[#F5F5F5]"
                 >
-                  müəllim
-                </span>
-              </div>
-              <span class="h-px w-full bg-[#E7E7E7]"></span>
-              <p class="text-base font-TTHovesMedium">
-                “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                vel auctor ligula, nec sodales lectus. Pellentesque congue risus
-                sit amet mollis scelerisque.”
-              </p>
-            </div>
-
-            <!-- Card Item 2 -->
-            <div
-              class="bg-[#fff] flex flex-col items-start py-6 px-8 gap-6 rounded-[16px] border border-[#F5F5F5]"
-            >
-              <div class="flex justify-between items-center w-full gap-6">
-                <div class="flex flex-col items-start gap-1">
-                  <h3 class="font-TTHovesBold text-xl">Name surname</h3>
-                  <div class="flex items-center gap-2">
-                    <span class="text-base">4.5</span>
-                    <img src="/public/assets/icons/star.svg" alt="star" />
+                  <div class="flex justify-between items-center w-full gap-6">
+                    <div class="flex flex-col items-start gap-1">
+                      <h3 class="font-TTHovesBold text-xl">Name surname</h3>
+                      <div class="flex items-center gap-2">
+                        <span class="text-base">4.5</span>
+                        <img src="/public/assets/icons/star.svg" alt="star" />
+                      </div>
+                    </div>
+                    <span
+                      class="py-1.5 px-3 rounded-[6px] bg-primary-400 font-TTHovesBold text-lg text-primary-900"
+                      >müəllim</span
+                    >
                   </div>
+                  <span class="h-px w-full bg-[#E7E7E7]"></span>
+                  <p class="text-base font-TTHovesMedium">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Morbi vel auctor ligula, nec sodales lectus. Pellentesque
+                    congue risus sit amet mollis scelerisque.”
+                  </p>
                 </div>
-                <span
-                  class="py-1.5 px-3 rounded-[6px] bg-primary-400 font-TTHovesBold text-lg text-primary-900"
-                >
-                  tələbə
-                </span>
               </div>
-              <span class="h-px w-full bg-[#E7E7E7]"></span>
-              <p class="text-base font-TTHovesMedium">
-                “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                vel auctor ligula, nec sodales lectus. Pellentesque congue risus
-                sit amet mollis scelerisque.”
-              </p>
-            </div>
-
-            <!-- Card Item 3 -->
-            <div
-              class="bg-[#fff] flex flex-col items-start py-6 px-8 gap-6 rounded-[16px] border border-[#F5F5F5]"
-            >
-              <div class="flex justify-between items-center w-full gap-6">
-                <div class="flex flex-col items-start gap-1">
-                  <h3 class="font-TTHovesBold text-xl">Name surname</h3>
-                  <div class="flex items-center gap-2">
-                    <span class="text-base">4.5</span>
-                    <img src="/public/assets/icons/star.svg" alt="star" />
+              <!-- Card Item 2 -->
+              <div class="swiper-slide">
+                <div
+                  class="bg-[#fff] flex flex-col items-start py-6 px-8 gap-6 rounded-[16px] border border-[#F5F5F5]"
+                >
+                  <div class="flex justify-between items-center w-full gap-6">
+                    <div class="flex flex-col items-start gap-1">
+                      <h3 class="font-TTHovesBold text-xl">Name surname</h3>
+                      <div class="flex items-center gap-2">
+                        <span class="text-base">4.5</span>
+                        <img src="/public/assets/icons/star.svg" alt="star" />
+                      </div>
+                    </div>
+                    <span
+                      class="py-1.5 px-3 rounded-[6px] bg-primary-400 font-TTHovesBold text-lg text-primary-900"
+                      >tələbə</span
+                    >
                   </div>
+                  <span class="h-px w-full bg-[#E7E7E7]"></span>
+                  <p class="text-base font-TTHovesMedium">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Morbi vel auctor ligula, nec sodales lectus. Pellentesque
+                    congue risus sit amet mollis scelerisque.”
+                  </p>
                 </div>
-                <span
-                  class="py-1.5 px-3 rounded-[6px] bg-primary-400 font-TTHovesBold text-lg text-primary-900"
-                >
-                  tələbə
-                </span>
               </div>
-              <span class="h-px w-full bg-[#E7E7E7]"></span>
-              <p class="text-base font-TTHovesMedium">
-                “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                vel auctor ligula, nec sodales lectus. Pellentesque congue risus
-                sit amet mollis scelerisque.”
-              </p>
+              <!-- Card Item 3 -->
+              <div class="swiper-slide">
+                <div
+                  class="bg-[#fff] flex flex-col items-start py-6 px-8 gap-6 rounded-[16px] border border-[#F5F5F5]"
+                >
+                  <div class="flex justify-between items-center w-full gap-6">
+                    <div class="flex flex-col items-start gap-1">
+                      <h3 class="font-TTHovesBold text-xl">Name surname</h3>
+                      <div class="flex items-center gap-2">
+                        <span class="text-base">4.5</span>
+                        <img src="/public/assets/icons/star.svg" alt="star" />
+                      </div>
+                    </div>
+                    <span
+                      class="py-1.5 px-3 rounded-[6px] bg-primary-400 font-TTHovesBold text-lg text-primary-900"
+                      >tələbə</span
+                    >
+                  </div>
+                  <span class="h-px w-full bg-[#E7E7E7]"></span>
+                  <p class="text-base font-TTHovesMedium">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Morbi vel auctor ligula, nec sodales lectus. Pellentesque
+                    congue risus sit amet mollis scelerisque.”
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -740,26 +751,84 @@
         </div>
       </div>
     </footer>
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
+      var swiper = new Swiper(".swiper-container", {
+        loop: true, // Sonsuz kaydırma
+        grabCursor: true, // Fareyle kaydırmayı aktif et
+        slidesPerView: 2.5, // 2.5 kart gösterecek
+        spaceBetween: 30, // Kartlar arasındaki boşluk
+        breakpoints: {
+          1024: {
+            slidesPerView: 2.5, // 1024px ve üzeri ekranlarda 2.5 kart
+          },
+          600: {
+            slidesPerView: 1.5, // 600px ve üzeri ekranlarda 1.5 kart
+          },
+          0: {
+            slidesPerView: 1.2, // 0 ve üzeri ekranlarda 1.2 kart
+          },
+        },
+        touchEventsTarget: "container", // Mobilde kaydırmayı etkinleştir
+      });
+      // Sayıları arttıran fonksiyon
+      const countUp = (elementId, start, end, duration) => {
+        let startTime = null;
+        const element = document.getElementById(elementId);
+
+        const updateCounter = (timestamp) => {
+          if (!startTime) startTime = timestamp;
+          const progress = timestamp - startTime;
+          const value = Math.min(
+            start + (end - start) * (progress / duration),
+            end
+          );
+
+          element.textContent = Math.floor(value) + "+"; // "+" işareti eklendi
+
+          if (progress < duration) {
+            requestAnimationFrame(updateCounter);
+          }
+        };
+
+        requestAnimationFrame(updateCounter);
+      };
+
+      // Intersection Observer ile scroll'u takip etme
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              countUp("count-1", 0, 200, 2000); // Sayı artışı
+              countUp("count-2", 0, 300, 2000); // Sayı artışı
+              countUp("count-3", 0, 50, 2000); // Sayı artışı
+              observer.disconnect(); // Animasyon başladı, bir daha gözlemlenmesin
+            }
+          });
+        },
+        { threshold: 0.5 }
+      );
+
+      // Kartları gözlemlemeye başla
+      observer.observe(document.querySelector(".grid"));
       function toggleAccordion(index) {
         const contents = document.querySelectorAll("[id^='content-']");
         const icons = document.querySelectorAll("[id^='icon-']");
 
         // SVG for Down icon
         const downSVG = `
-<svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M5.95874 26C5.95874 37.0673 14.9309 46.0417 26.0004 46.0417C37.0677 46.0417 46.0421 37.0673 46.0421 26C46.0421 14.9327 37.0677 5.95834 26.0004 5.95834C14.9309 5.95834 5.95874 14.9327 5.95874 26Z" fill="#3F50BB"/>
-<path d="M18.4795 29.125L26 21.572L33.5205 29.125" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M5.95874 26C5.95874 37.0673 14.9309 46.0417 26.0004 46.0417C37.0677 46.0417 46.0421 37.0673 46.0421 26C46.0421 14.9327 37.0677 5.95834 26.0004 5.95834C14.9309 5.95834 5.95874 14.9327 5.95874 26Z" fill="#3F50BB"/>
+      <path d="M18.4795 29.125L26 21.572L33.5205 29.125" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
   `;
 
         // SVG for Up icon
         const upSVG = `
-<svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M5.95874 26C5.95874 37.0673 14.9309 46.0417 26.0004 46.0417C37.0677 46.0417 46.0421 37.0673 46.0421 26C46.0421 14.9327 37.0677 5.95834 26.0004 5.95834C14.9309 5.95834 5.95874 14.9327 5.95874 26Z" fill="#EDEFFB"/>
-<path d="M18.4795 22.875L26 30.428L33.5205 22.875" stroke="#3F50BB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M5.95874 26C5.95874 37.0673 14.9309 46.0417 26.0004 46.0417C37.0677 46.0417 46.0421 37.0673 46.0421 26C46.0421 14.9327 37.0677 5.95834 26.0004 5.95834C14.9309 5.95834 5.95874 14.9327 5.95874 26Z" fill="#EDEFFB"/>
+      <path d="M18.4795 22.875L26 30.428L33.5205 22.875" stroke="#3F50BB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
   `;
 
         // Kapalı duruma sıfırla
@@ -780,6 +849,11 @@
           icon.innerHTML = downSVG;
         }
       }
+
+      // Başlangıçta ilk accordion'ı aç
+      document.addEventListener("DOMContentLoaded", () => {
+        toggleAccordion(1); // İlk accordion'ı açmak için
+      });
     </script>
   </body>
 </html>
